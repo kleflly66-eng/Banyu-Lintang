@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Rasa Jatim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>🍜 Cita Rasa Jatim</h1>
+        <p>Temukan tempat makan terbaik di Jawa Timur</p>
+    </header>
+
+    
+    <main>
+        
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Cari tempat makan...">
+            <select id="filterKota">
+                <option value="">Semua Kota</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Malang">Malang</option>
+                <option value="Sidoarjo">Sidoarjo</option>
+                <option value="Banyuwangi">Banyuwangi</option>
+            </select>
+            <button id="btnRefresh" class="btn-refresh">🔄 Refresh Data</button>
+        </section>
+
+        
+        <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Memuat data restoran...</p>
+        </div>
+
+        
+        <section id="restaurantList" class="restaurant-container">
+            
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Cita Rasa Jatim | Data from OpenStreetMap</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
